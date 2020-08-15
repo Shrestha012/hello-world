@@ -4,10 +4,11 @@ int main()
 {
 char str[100]="my_name_is_edcast_future";
 char*p;
+/*extract first token*/
 p=strtok(str,"_");
-while(p!=NULL)
+while(p!=NULL) /*this loop for extracting remaining tokens*/
 {
- printf("%s\n",p);
+ printf("%s\n",p)/*printing each token*/
  p=strtok(NULL,"_");
 }
 return 0;
